@@ -1,0 +1,47 @@
+Câu lệnh Git 
+-Chứng thực cá nhân:
+  $ git config --global user.name "Name"
+  $ git config --global user.email " "
+
+-Tạo 1 kho chứa
+  $ git init
+
+-Kiểm tra nhánh
+  $ git branch
+-Tạo 1 nhánh mới
+  $ git branch <name>
+- Chuyển và tạo mới
+  $ git checkout -b <name>
+
+-Chuyển nhánh
+  $ git checkout <name>
+
+-Cập nhật thay dổi
+  $ git add .
+  sau dó $ git commit -m "mess"
+
+
+-Cập nhật lên server
+
+  $ git push origin <name>
+(nếu chưa có remotr trên server
+
+  $ git remote add origin <remote_url>
+  $ git push origin <name>
+
+-Gộp nhánh
+ (sau tất cả thì ta phải merge vào nhánh gốc master)
+ 1.checkout khỏi nhánh hiện tại 
+  & git checkout master
+ 2. merger vào master
+  & git merge <name>
+
+- Kéo từ remote repository
+  $ git pull origin master
+
+
+
+
+
+
+
