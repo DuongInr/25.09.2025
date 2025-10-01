@@ -1,0 +1,27 @@
+Tip trên GIT
+- Chỉ nên push khi bạn chắc chắn đã hoàn thành phần việc của mình → Hãy chia nhỏ công việc thành các gói (work packages) có thể hoàn thành trong thời gian hợp lý
+
+- Chỉ nên pull khi:Bạn đã hoàn thành phần việc của mình
+/Hoặc khi người khác:
+   Đã sửa một lỗi ảnh hưởng đến công việc của bạn
+   Đã hoàn thành một chức năng mà bạn cần sử dụng
+
+Tuy nhiên:
+Không nên commit mã sai hoặc chưa chạy được
+Trong trường hợp bất khả kháng, vẫn có thể chấp nhận miễn là chưa push lên server
+
+- Luôn thực hiện Pull trước khi Push
+Nếu kho lưu trữ trên server đã bị thay đổi bởi các lần push của thành viên khác, thì push của bạn sẽ bị từ chối nếu không cập nhật trước.
+
+Tất nhiên, có thể xảy ra trường hợp người khác thực hiện push giữa lúc bạn vừa pull và chuẩn bị push → Khi đó, pull lại sẽ thất bại → Bạn cần thực hiện lại pull một lần nữa
+
+- Luôn commit trước khi pull
+Pull có thể thực hiện merge, và điều này có thể làm thay đổi mã nguồn của bạn
+
+Nếu bạn đã commit trước đó, bạn vẫn có thể quay lại phiên bản cũ nếu cần → Nếu chưa commit, bạn không thể khôi phục lại trạng thái trước đó
+
+👉 Tóm lại:
+
+Commit → Pull → Push là quy trình an toàn và hiệu quả nhất khi làm việc nhóm với Git.
+
+Nó giúp tránh xung đột, bảo vệ mã nguồn cá nhân và đảm bảo đồng bộ với nhóm.
